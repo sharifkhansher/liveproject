@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 // const url= 'mongodb://127.0.0.1:27017';
 // console.log(process.env);
 // console.log("=============>",process.env.MONGO_URL);
+console.log("sharif khan hello");
 const ConnectDB= async()=>{
     try{
         // console.log(err);
