@@ -65,11 +65,18 @@ const deleteuser= asyncHandler( async(req,res)=>{
     res.status(200).json({message: `delete data ${req.params._id}`});
 })
 
+
+// const getfimndBy = asyncHandler (async(req,res)=>{
+//   const data = await studentscema.find();
+//   const result= 
+// })
+
 module.exports={
     getuser,
     setUsers,
     updateuser,
     deleteuser,
-    loginserver
+    loginserver,
+    
 
 }
