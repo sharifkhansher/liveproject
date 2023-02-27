@@ -9,7 +9,7 @@ const studentscema = new mongoose.Schema({
         required:[true,'plese add an dicription']
     },
     password:{
-        type:Number,
+        type:String,
         required:[true,'plese add an price']
 
     }

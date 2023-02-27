@@ -16,7 +16,7 @@ const studentSchema = new mongoose.Schema({
     type:Number,
     required:[true,'Please add a quentity']
    },
-   
+   Image:String,
 },{
     timestamps:true
 });
