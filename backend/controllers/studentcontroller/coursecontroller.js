@@ -4,11 +4,11 @@ const { json } = require('express')
 
 const bcrypt = require('bcryptjs');
 const asyncHandler = require('express-async-handler');
-const User = require('../../routes/studentroutes/courseroutes');
+const User1 = require('../../Model/studentmodel/coursemodel');
 
 
 const getcourse = asyncHandler (async(req,res)=>{
-    let data = await User.find();
+    let data = await User1.find();
     console.log("======>",data);
     res.status(200).json(data)
 
@@ -16,8 +16,8 @@ const getcourse = asyncHandler (async(req,res)=>{
 
 const setcourse = asyncHandler(async(req,res)=>{
     const { course } = req.body
-    let data = await User.create({course}); 
-    console.log("====>",data);
+     let data = await User1.create({course}); 
+    console.log("==User==>",User1);
      res.status(200).json({data})
 
 })
