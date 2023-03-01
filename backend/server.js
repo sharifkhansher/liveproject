@@ -17,7 +17,10 @@ app.use('/api/todos',require('./routes/todoroutes'))
 app.use('/profile',express.static('upload/images'))
 app.use('/api/student',require('./routes/studentroutes/Studentroutes'))
 app.use('/api/country',require('./routes/studentroutes/studentcountryroutes'))
-app.use('/api/course',require('./routes/studentroutes/courseroutes'))
+app.use('/api/course',require('./routes/studentroutes/courseroutes'));
+app.use('/api/singnup',require('./routes/signuproutes'))
+app.use('/api/profile',require('./routes/profileroutrs'))
+app.use ('/api/employ',require('./routes/employroutrs/employroutrs'))
 
 
 const ConnectDB = require('./config/db');

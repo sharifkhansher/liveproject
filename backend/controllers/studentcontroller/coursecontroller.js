@@ -21,8 +21,13 @@ const setcourse = asyncHandler(async(req,res)=>{
      res.status(200).json({data})
 
 })
+const searchdata =asyncHandler(async(req,res)=>{
+    let data =await User1.findById(req.params._id);
+    res.status(200).json(data)
+})
 
 module.exports = {
     getcourse,
-    setcourse
+    setcourse,
+    searchdata
 }

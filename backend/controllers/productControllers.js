@@ -34,9 +34,7 @@ const updateproduct=asyncHandler( async (req,res)=>{
         new : true
     })
     console.log("=====>",updateusers);
-    // let data = await db();
-    // let result = await  data.updateOne({_id: new mongodb.ObjectId(req.params._id)},{$set:req.body});
-    // res.status(200).json({result})
+    
     res.status(200).json({message : `updatedata ${req.params._id}`})
 })
 const deleteproduct= asyncHandler( async(req,res)=>{
