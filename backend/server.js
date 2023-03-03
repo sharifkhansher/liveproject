@@ -7,9 +7,9 @@ const path =require('path')
 
 
 const dotenv = require('dotenv').config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 app.use(express.urlencoded({extended:false}))
-const errorHandler = require('./middleware/errorMiddleware')
+// const errorHandler = require('./middleware/errorMiddleware')
 app.use('/api/user',route,require('./routes/userRoutes'));
 app.use('/api/product', require('./routes/productRoutes'))
 app.use('/api/userauth', require('./routes/useraurtRoutes'))
@@ -21,6 +21,11 @@ app.use('/api/course',require('./routes/studentroutes/courseroutes'));
 app.use('/api/singnup',require('./routes/signuproutes'))
 app.use('/api/profile',require('./routes/profileroutrs'))
 app.use ('/api/employ',require('./routes/employroutrs/employroutrs'))
+app.use ('/api/product1',require('./routes/productroutes'))
+app.use ('/api/descboard',require('./routes/descboardroutes'));
+app.use ('/api/user1',require('./routes/userroutes/userroutes'));
+
+
 
 
 const ConnectDB = require('./config/db');
