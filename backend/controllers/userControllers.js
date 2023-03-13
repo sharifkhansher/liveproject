@@ -27,7 +27,7 @@ const loginserver=asyncHandler(async (req,res)=>{
     const userExists = await login.findOne({ email })
         if (userExists) {
             res.status(400);
-            throw new Error('Email already exists')
+            throw new Error("Email already exists")
         }
         const passexits = await login.findOne({password})
         if(passexits){

@@ -1,9 +1,9 @@
 const express= require('express');
 const app = express()
-const Router = express.Router()
-Router.use(express.json())
+const router = express.Router()
+router.use (express.json())
 const {alldata} = require("../controllers/descboardcontroller")
 
-Router.get("/",alldata)
+router.get("/",alldata)
 
-module.exports = Router
+module.exports = router

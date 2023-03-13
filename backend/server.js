@@ -23,7 +23,9 @@ app.use('/api/profile',require('./routes/profileroutrs'))
 app.use ('/api/employ',require('./routes/employroutrs/employroutrs'))
 app.use ('/api/product1',require('./routes/productroutes'))
 app.use ('/api/descboard',require('./routes/descboardroutes'));
-app.use ('/api/user1',require('./routes/userroutes/userroutes'));
+app.use ('/api/user1',require('./routes/userroutes/usersroutes'));
+app.use ('/api/addcard',require('./routes/addtocarroutes'));
+
 
 
 

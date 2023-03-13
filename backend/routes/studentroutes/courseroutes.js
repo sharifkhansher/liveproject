@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router();
 router.use(express.json())
 
-
 const {getcourse,setcourse,searchdata} = require('../../controllers/studentcontroller/coursecontroller');
 
 router.get('/', getcourse);

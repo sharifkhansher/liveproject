@@ -1,15 +1,15 @@
 const express = require('express');
-const Router = express.Router();
+const router = express.Router();
 
-Router.use(express.json())
+router.use(express.json())
 
 
-    const {getuser,setUsers,updateuser,deleteuser,loginserver}=require('../controllers/usercontrollers')
-Router.get('/',getuser)
-Router.post('/',setUsers)
-Router.put('/:_id',updateuser)
-Router.delete('/:_id',deleteuser)
-Router.post("/login",loginserver)
+const {getuser,setUsers,updateuser,deleteuser,loginserver}=require('../controllers/usercontrollers')
+router.get('/',getuser)
+router.post('/',setUsers)
+router.put('/:_id',updateuser)
+router.delete('/:_id',deleteuser)
+router.post("/login",loginserver)
 // Router.get('/id',getfindById)
 // routes.use(express.json())
 
@@ -17,4 +17,4 @@ Router.post("/login",loginserver)
 // Router.route('/:id').delete(deleteuser).put(updateuser)
 
 
-module.exports = Router;
+module.exports = router;
